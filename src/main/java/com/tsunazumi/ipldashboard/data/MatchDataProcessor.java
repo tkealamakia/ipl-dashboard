@@ -19,6 +19,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
     match.setCity(matchInput.getCity());
     match.setDate(LocalDate.parse(matchInput.getDate()));
     match.setPlayerOfMatch(matchInput.getPlayer_of_match());
+    match.setVenue(matchInput.getVenue());
 
     String firstInningsTeam, secondInningsTeam;
     if ("bat".equals(matchInput.getToss_decision())) {
